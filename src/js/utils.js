@@ -309,6 +309,8 @@ export const parseOptions = options => {
 export const parseUserData = userData => {
   const data = []
 
+  console.log('ud: ' + userData)
+
   if (userData.length) {
     const values = userData[0].getElementsByTagName('value')
 

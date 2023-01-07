@@ -155,7 +155,7 @@
     },
     {
       "uid": "f6f11c17a7d16ee01cf0a46b757652af",
-      "css": "file",
+      "css": "fileUpload",
       "code": 59402,
       "src": "custom_icons",
       "selected": true,
@@ -210,6 +210,18 @@
       "css": "cancel",
       "code": 59404,
       "src": "mfglabs"
+    },
+    {
+      "uid": "3a7b6876c1817ce3b801b86c04a9d0af",
+      "css": "arviointivali",
+      "code": 61794,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b99d736cef489a3150ba8aac7c4e8403",
+      "css": "currentTime",
+      "code": 59406,
+      "src": "iconic"
     }
   ]
 }

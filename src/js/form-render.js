@@ -273,7 +273,7 @@ class FormRender {
       .forEach(fieldData => window.tinymce.get(fieldData.name).save())
 
     this.instanceContainers.forEach(container => {
-      const userDataMap = $('select, input, textarea', container)
+      const userDataMap = $('select, input, textarea, div, button' , container)
         .serializeArray()
         .reduce((acc, { name, value }) => {
           name = name.replace('[]', '')
@@ -282,6 +282,7 @@ class FormRender {
           } else {
             acc[name] = [value]
           }
+          
           return acc
         }, {})
 
@@ -293,13 +294,25 @@ class FormRender {
         // Skip disabled fields -- This will not have user data available
         if (definedField.disabled) continue
 
-        definedField.userData = userDataMap[definedField.name]
+        if(definedField.type == 'arviointivali'){
+          definedField.userData = [document.getElementsByClassName('field-' + definedField.name)[0].children[1].value]
+        }
+        else if(definedField.type == 'currentTime'){
+          definedField.userData = [document.getElementsByClassName('field-' + definedField.name)[0].children[1].value]
+        }
+        else if(definedField.type == 'fileUpload'){
+          definedField.userData = [document.getElementsByClassName('field-' + definedField.name)[0].children[1].value]
+        }
+        else{
+          definedField.userData = userDataMap[definedField.name]
+        }
       }
     })
 
     return definedFields
   }
 
+  
   /** Clear all rendered fields */
   clear() {
     this.instanceContainers.forEach(container => {

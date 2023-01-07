@@ -28,7 +28,7 @@ export const defaultOptions = {
   controlPosition: 'right',
   dataType: 'json',
   defaultFields: [],
-  disabledActionButtons: [], // save, data, clear
+  disabledActionButtons: ['save'], // save, data, clear
   disabledAttrs: [],
   disabledFieldButtons: {},
   disabledSubtypes: {}, // subtypes you want disabled
