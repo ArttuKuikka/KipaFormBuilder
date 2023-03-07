@@ -3,7 +3,7 @@ import mi18n from 'mi18n'
 const noop = () => null
 
 // eslint-disable-next-line
-mi18n.addLanguage('en-US', FB_EN_US)
+mi18n.addLanguage('fi-FI', FB_FI_FI)
 
 export const defaultOptions = {
   actionButtons: [], // additional form action buttons- save, data, clear
