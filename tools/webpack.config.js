@@ -115,7 +115,7 @@ const webpackConfig = {
       footer: '\n})(jQuery);',
     }),
     new DefinePlugin({
-      FB_EN_US: JSON.stringify(langFiles['en-US']),
+      FB_FI_FI: JSON.stringify(langFiles['fi-FI']),
     }),
     new HtmlWebpackPlugin({
       template: '../src/demo/index.html',
