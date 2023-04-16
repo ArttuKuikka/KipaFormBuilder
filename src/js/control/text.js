@@ -15,6 +15,18 @@ export default class controlText extends control {
         date: 'dateField',
         file: 'fileUpload',
       },
+      defaultAttrs:{
+        'tarkista':{
+          label: 'Tarkista',
+          value: true,
+          type: 'checkbox'
+        },
+        'lataa':{
+          label: 'Sisällytä lataukseen',
+          value: true,
+          type: 'checkbox'
+        }
+      }
     }
   }
 

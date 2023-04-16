@@ -14,6 +14,18 @@ export default class controlAutocomplete extends control {
       mi18n: {
         requireValidOption: 'requireValidOption',
       },
+      defaultAttrs:{
+        'tarkista':{
+          label: 'Tarkista',
+          value: true,
+          type: 'checkbox'
+        },
+        'lataa':{
+          label: 'Sisällytä lataukseen',
+          value: true,
+          type: 'checkbox'
+        }
+      }
     }
   }
 

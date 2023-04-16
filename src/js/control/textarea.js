@@ -14,6 +14,18 @@ export default class controlTextarea extends control {
       mi18n: {
         textarea: 'textArea',
       },
+      defaultAttrs:{
+        'tarkista':{
+          label: 'Tarkista',
+          value: true,
+          type: 'checkbox'
+        },
+        'lataa':{
+          label: 'Sisällytä lataukseen',
+          value: true,
+          type: 'checkbox'
+        }
+      }
     }
   }
 

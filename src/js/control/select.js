@@ -16,6 +16,18 @@ export default class controlSelect extends control {
       mi18n: {
         minSelectionRequired: 'minSelectionRequired',
       },
+      defaultAttrs:{
+        'tarkista':{
+          label: 'Tarkista',
+          value: true,
+          type: 'checkbox'
+        },
+        'lataa':{
+          label: 'Sisällytä lataukseen',
+          value: true,
+          type: 'checkbox'
+        }
+      }
     }
   }
 
