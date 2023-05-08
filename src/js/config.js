@@ -96,6 +96,7 @@ export const styles = {
 
 export const defaultI18n = {
   location: 'assets/lang/',
+  extension: '.txt'
 }
 
 export const config = {}
